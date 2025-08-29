@@ -1,18 +1,3 @@
-/*
-CleanStore (single-file React + Tailwind component)
-- Tab title set to "clean"
-- Uses Tailwind utility classes (Tailwind must be available in the host project)
-- Google Fonts injected at runtime (Playfair Display for headings, Inter for UI)
-
-How to preview:
-1) Create a Vite React app or use CodeSandbox/StackBlitz.
-2) Install Tailwind and configure per Tailwind docs.
-3) Replace src/App.jsx with this file (or import the component in your app).
-
-This component is intentionally minimal and easy to tweak: fonts, colors,
-spacing and images are all top-level and easy to change.
-*/
-
 import React, { useEffect } from "react";
 
 const SAMPLE_PRODUCTS = [
@@ -20,13 +5,13 @@ const SAMPLE_PRODUCTS = [
     id: 1,
     title: "Your tshirt",
     price: "$69.69 USD",
-    img: "https://images.unsplash.com/photo-1520975911927-7f5945d3d3f3?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=1b4de8d5c2b8c2c4d2144f9c6b2f2a4f",
+    img: "/images/FRONT.jpg",
   },
   {
     id: 2,
     title: "Your tshirt",
     price: "$69.69 USD",
-    img: "https://images.unsplash.com/photo-1520975720893-0a3f4f8a1b1e?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=8d4b0b8b3a0b1a9a1f8f2c1a2f9d6e7c",
+    img: "/images/BACK.jpg",
   },
 ];
 
@@ -60,7 +45,7 @@ export default function CleanStore() {
           <div className="flex-1 flex items-center justify-center pointer-events-none">
             {/* centered logo */}
             <div className="pointer-events-auto text-center">
-              <img src="https://via.placeholder.com/120x70?text=Logo" alt="logo" className="mx-auto h-14 w-auto object-contain" />
+              <img src="/images/TUFFISION.jpg" alt="TUFFISION logo" className="mx-auto h-14 w-auto object-contain" />
               <nav className="mt-3 text-sm tracking-wide text-gray-700 font-medium">
                 <a href="#" className="px-3 hover:underline">Home</a>
                 <a href="#shop" className="px-3 hover:underline">Shop All</a>
@@ -86,8 +71,8 @@ export default function CleanStore() {
           <div>
             <div className="aspect-[16/10] bg-gray-100 overflow-hidden rounded-sm shadow-sm">
               <img
-                src="https://images.unsplash.com/photo-1520975911927-7f5945d3d3f3?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&s=1b4de8d5c2b8c2c4d2144f9c6b2f2a4f"
-                alt="hero"
+                src="/images/TUFFISION.jpg"
+                alt="TUFFISION"
                 className="w-full h-full object-cover"
               />
             </div>
